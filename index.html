@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <div class="music-player">
+        <h1> Music Player</h1>
+
+        <!-- Album Image -->
+         <div class="album">
+           <img id="image1" src="Album Images/song1 Fassounds.jpg" alt="album cover">
+          
+        
+        </div>
+
+        <!-- Song Information  -->
+         <div class="song-info">
+
+            <h2 id="song-title"> Escape Your Love</h2>
+            <p id="artist"> FaSSounds</p>
+
+           
+
+        </div>
+            <!-- Audio  -->
+            <div class="song-audio">
+                <audio  id="audio">
+                    <source src="songs/song1.mp3" type="audio/mp3">
+                </audio>
+
+               
+
+            </div>
+
+         <!-- Progress Section -->
+          <div class="progress-section">
+
+            <span id="current-time">0.00</span>
+
+            <input
+            type="range"
+            id="progress-bar"
+            min="0"
+            value="0"
+            >
+
+            <span id="duration">0.00</span>
+             
+          </div>
+
+
+          <!-- Music Controls -->
+
+          <div class="controls">
+            <button id="previous"><img src="Album Images/previous (1).png" alt="previous">
+
+            </button>
+
+            <button id="play">
+                <img src="Album Images/play-icon.png" alt="play">
+            </button>
+
+            <button id="next">
+                <img src="Album Images/next-button (1).png" alt="next">
+            </button>
+
+          </div>
+
+          <!-- Volume Section -->
+          <div class="volume-section">
+          <button id="volume-button">
+            <img src="Album Images/volume-icon.png" alt="button image"> 
+          </button>
+
+            <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.1"
+            value="1"
+            >
+          </div>
+
+          
+          <!--Playlist  -->
+          <hr>
+         <div class="playlist">
+
+            <h3>Playlist</h3>
+            <div id="playlist"></div>
+         </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
